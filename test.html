@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Вкладки</title>
+  <style>
+.menu-button {
+	border: 2px outset #dddfff;
+	border-radius: 1px;
+	
+	background-color: #9a9ab3;
+	padding:5px;
+	
+	height:100%;
+	
+	margin-top: 5px;
+ 	margin-left: 5px;
+	margin-right: 5px;
+	
+	text-align:center;
+	
+	color:#14145a;
+	font-family:helvetica;
+	font-feature-settings:"kern";
+	font-size: 12px;
+	font-weight:bold;
+}
+input { 
+  display: none; 
+}
+
+input:checked  + label{ 
+	color: #555;
+	background-color: white; 
+} 
+section {
+	display: none;
+}
+
+#tab1:checked ~ #t1, 
+#tab2:checked ~ #t2,
+#tab3:checked ~ #t3
+{
+	height:100%;
+	
+	margin: 10px 5px 5px 5px;
+	
+	border: 2px solid orange;
+	outline: 5px solid #999ab6;
+	
+	display: flex;
+	flex-direction: column;  
+}
+
+#tab1:checked  ~ #menu #ttt1,
+#tab2:checked  ~ #menu #ttt2,
+#tab3:checked  ~ #menu #ttt3 {
+	background: #EBEBEB;
+	border-color: #fff;
+}
+
+  </style>
+ </head>
+ <body>
+	<div id="tabs">
+		<div id="header">header</div>
+		
+		<input id="tab1" type="radio" name="menu" checked> 
+		<section id="t1">
+		tab1
+		</section>
+		<input id="tab2" type="radio" name="menu" checked> 
+		<section id="t2">
+		tab2
+		</section>
+		<input id="tab3" type="radio" name="menu" checked> 
+		<section id="t3">
+			tab3
+		</section>	
+		<div id="menu">
+		<label id="ttt1" for="tab1" class="menu-button">TAB1</label>
+		<label id="ttt2" for="tab2" class="menu-button">TAB1</label>
+		<label id="ttt3" for="tab3" class="menu-button">TAB1</label>
+		</div>
+	</div>
+ </body>
+</html>

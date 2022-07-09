@@ -1,0 +1,375 @@
+#toplevel {
+	display: flex;
+	flex-direction: row;
+	
+	width:100%;
+	height:100%;
+	
+	width: 1024px;
+	height: 768px;	
+	
+	margin: auto;
+  
+	padding-left: 5px;
+	padding-bottom: 5px;
+	
+	background-color: #010080;
+	
+	font-family:helvetica;
+	font-feature-settings:"kern";
+	font-size: 12px;
+} 
+
+#original-screen:checked ~ #toplevel {
+	width: 1024px;
+	height: 768px; 
+}
+
+#fit-screen:checked ~ #toplevel {
+	width:100%;
+	height:100%;	
+}
+
+#original-screen:checked ~ #header-icons > #orig-scr-icon{
+	color:red;
+}
+
+#fit-screen:checked ~ #header-icons > #fit-scr-icon {
+	background-color: #EBEBEB;
+}
+
+#main-content{	
+	display: flex;
+	flex-direction: column;
+	width:100%;
+}
+
+#header {
+	height:100px;
+	width: 100%;
+	
+	margin-top: 5px;
+	display: flex;
+	flex-direction: row;
+	
+	color:white;
+}
+
+#header-left{
+	height: 100%;
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.col-item{
+	height:100%;
+}
+
+#header-icons{
+	font-size:14px;
+	font-weight:bold;
+	background-color: #6d6d85;
+	
+	display:flex;
+	flex-direction: row;
+}
+
+#header-icons > div {
+	margin-left:10px;
+}
+
+#header-message {
+	margin-top:2px;
+	
+	background-color: #6d6d85;
+
+	font-weight:bold;
+	
+	display:flex;
+	flex-direction: row;
+}
+
+#header-message > div{
+	margin-left:2px;
+	margin-top:8px;
+	height: 35px;
+}
+
+.message-warning > div{
+	color: black;
+	background-color: yellow;
+}
+
+.message-error > div{
+	color: white;
+	background-color: #ff542e;
+}
+
+#header-message-time, #header-message-number {
+	width:70px;
+}
+
+#header-message-source {
+	width:90px;
+	margin-right: 5px;
+}
+
+#header-message-text {
+	width: 100%;
+	text-align:left;
+}
+
+#header-right{
+	width: 235px;
+	height: 100%;
+	background-color: #6d6d85;
+	margin-left:2px;
+	display:flex;
+	flex-direction:row;
+}
+
+#header-datetime{
+	color: white;
+	text-align:left;
+	font-weight:bold;
+	line-height: 25px;
+	padding: 10px 0px 0px 10px;
+}
+
+#header-trump-logo {
+	background-color:white;
+	height:68px;
+	width: 68px;
+	padding:1px;
+	display:flex;
+	flex-direction:column;
+	margin:auto;
+}
+
+#trump-text {
+	color:black;
+	font-weight:bold;
+	font-size: 14px;
+	text-align:center;
+}
+
+#trump-logo-inner {
+	width:100%;
+	height:100%;
+	background-color: #000080;
+} 
+
+#menu {
+	width: 115px; 
+	
+	display: flex;
+	flex-direction: column;
+	
+	background-color: #010080;
+}
+
+
+
+.menu-button {
+	border: 2px outset #dddfff;
+	border-radius: 1px;
+	
+	background-color: #9a9ab3;
+	padding:5px;
+	
+	height:100%;
+	
+	margin-top: 5px;
+ 	margin-left: 5px;
+	margin-right: 5px;
+	
+	text-align:center;
+	
+	color:#14145a;
+	font-weight:bold;
+}
+
+.tabs-input{ 
+  display: none; 
+}
+
+input:checked  + label{ 
+	color: #555;
+	background-color: white; 
+} 
+
+section {
+	display: none;
+}
+
+#tab-production:checked ~ #main-content > #main-panel-production, 
+#tab-handle:checked ~ #main-content > #main-panel-handle ,
+#tab-setting:checked ~ #main-content > #main-panel-setting, 
+#tab-programming:checked ~ #main-content > #main-panel-programming,
+#tab-technology:checked ~ #main-content > #main-panel-technology,
+#tab-maintenance:checked ~ #main-content > #main-panel-maintenance,
+#tab-diagnosis:checked ~ #main-content > #main-panel-diagnosis,
+#tab-help:checked ~ #main-content > #main-panel-help
+{
+	height:100%;
+	
+	margin: 10px 5px 5px 5px;
+	
+	border: 2px solid orange;
+	outline: 5px solid #999ab6;
+	
+	display: flex;
+	flex-direction: column;  
+}
+
+#tab-production:checked  ~ #menu > #production-button,
+#tab-handle:checked  ~ #menu > #handle-button,
+#tab-setting:checked ~ #menu > #setting-button, 
+#tab-programming:checked ~ #menu > #programming-button,
+#tab-technology:checked ~ #menu > #technology-button,
+#tab-maintenance:checked ~ #menu > #maintenance-button, 
+#tab-diagnosis:checked ~ #menu > #diagnosis-button,
+#tab-help:checked ~ #menu > #help-button 
+{
+	background: #EBEBEB;
+	border-color: #fff;
+}
+
+.main-panel-header{
+	background-color: #b4a06d;
+	height: 25px;
+
+	font-weight:bold;
+	
+	display:flex;
+	align-items: center;
+}
+
+.main-panel-content{
+	height:100%;
+	background-color: #999ab6;
+}
+
+#invisible-button{
+	visibility: hidden;
+}
+
+.main-panel-buttons{
+	background-color: #ebebeb;
+	height: 110px;
+	padding:5px;
+	
+	display: flex;
+	flex-direction: row;
+}
+
+.main-panel-button{
+	width:100%;
+	text-align:center;
+}
+
+.main-panel-button-icon{
+	margin-left:auto;
+	margin-right:auto;
+
+	padding:30px;
+	width:0px;;
+	background-color: #7e7f9b;
+	border: none;
+	border-radius:50%;
+}
+
+
+#main-panel-content-production{
+	display: flex;
+	flex-direction: column;
+	color:#eeefff;
+	font-weight: bold;
+}
+
+#production-upper, #production-upper-left, #production-upper-right{
+	display: flex;
+	flex-direction: row;
+}
+#production-upper-left {
+	width: 50%;
+}
+
+#production-upper{
+	height: 70px;
+	background-color: #66669a;
+	border-bottom : 5px solid #999ab6;
+}
+
+#production-down{
+	background-color: #66669a;
+	height: 100%;
+}
+
+#program-name{
+	width: 100%;
+	border-right : 5px solid #999ab6;
+}
+#program-counter{
+	width: 170px;
+	border-right : 5px solid #999ab6;
+}
+#program-counter > div{
+	display:flex;
+	flex-direction:row;
+}
+
+#program-counter > div > .production-input{
+	width: 100%;
+}
+
+#program-section{
+	width: 65px;
+	border-right : 5px solid #999ab6;
+}
+
+#program-bend-number > div{
+	display:flex;
+	flex-direction:row;
+}
+
+#program-bend-number > div > .production-input{
+	width: 100%;
+}
+
+#program-bend-number{
+	width: 100px;
+	border-right : 5px solid #999ab6;
+}
+#program-rept-number{
+	width: 100px;
+	border-right : 5px solid #999ab6;
+
+}
+#production-down-left {
+	width: 50%;
+	height: 100%;
+	border-right : 5px solid #999ab6;
+}
+
+.production-input {
+    color: #FFCC33;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #010080;
+    margin: 5px;
+    padding: 5px;
+	
+}
+
+
+
+
+
+
+
+
+
+
