@@ -2,12 +2,18 @@
 <head>
 	<title>TruBend 5085</title>
 	<link rel="stylesheet" href="./style.css"></link>
+	<link rel="stylesheet" href="./header.css"></link>
+	
+	<link rel="stylesheet" href="./prod.css"></link>
+	<link rel="stylesheet" href="./handle.css"></link>
+	<link rel="stylesheet" href="./prog.css"></link>
 	<meta charset="UTF-8">
 </head>
 <body>	
 	<input id="original-screen" type="radio" name="fit-screen2" class="tabs-input">
 	<input id="fit-screen" type="radio" name="fit-screen2" class="tabs-input" checked>
 	<div id="toplevel">
+	
 	<input id="tab-production" type="radio" name="menu" class="tabs-input" checked>
 	<input id="tab-handle" type="radio" name="menu" class="tabs-input"> 
 	<input id="tab-setting" type="radio" name="menu" class="tabs-input"> 
@@ -33,11 +39,11 @@
 						</div>
 					</div>
 					<div id="header-message" class="col-item message-error">
-						<div id="header-message-icon"></div>
-						<div id="header-message-time">1:01:30<br>PM</div>
-						<div id="header-message-number">61173014</div>
-						<div id="header-message-text">Защитный контроллер: связь прервана или неисправна</div>
-						<div id="header-message-source">Cnc SiSPS</div>
+						<div id="header-message-icon" class="v-align">ERR</div>
+						<div id="header-message-time" class="v-align">1:01:30<br>PM</div>
+						<div id="header-message-number" class="v-align">61173014</div>
+						<div id="header-message-text" class="v-align">Защитный контроллер: связь прервана или неисправна</div>
+						<div id="header-message-source" class="v-align">Cnc SiSPS</div>
 					</div>				
 				</div>
 				<div id="header-right">
@@ -186,40 +192,134 @@
 			</section>			
 						
 			<section id="main-panel-programming" class="main-panel">
-				<div class="main-panel-header">
-					NEW PROGRAM
-				</div>
+				<div class="main-panel-header">NEW PROGRAM</div>
 				<div class="main-panel-content">
-				jhgfhjgf
-				</div>
-				<div class="main-panel-buttons">
-					<div id="new-program-button" class="main-panel-button">
-						Новая<br>программа
-						<div class="main-panel-button-icon"></div>
+					<input id="tab-prog-detal" type="radio" name="prog-tabs" class="tabs-input" checked>
+					<input id="tab-prog-bendgraph" type="radio" name="prog-tabs" class="tabs-input"> 
+					<input id="tab-prog-tools" type="radio" name="prog-tabs" class="tabs-input" checked>
+					<input id="tab-prog-bends" type="radio" name="prog-tabs" class="tabs-input">
+					<input id="tab-prog-corr" type="radio" name="prog-tabs" class="tabs-input"> 
+					
+					<div id="tabs-header">
+						<label id="prog-detal-button" for="tab-prog-detal" class="tab-button">Гнутая делаль</label> 
+						<label id="prog-bendgraph-button" for="tab-prog-bendgraph" class="tab-button">BendGraph</label>
+						<label id="prog-tools-button" for="tab-prog-tools" class="tab-button">Инстру-<br>менты</label> 
+						<label id="prog-bends-button" for="tab-prog-bends" class="tab-button">Гибки</label>
+						<label id="prog-corr-button" for="tab-prog-corr" class="tab-button">Корректи-<br>ровки</label>
 					</div>
-					<div id="load-program-button" class="main-panel-button">
-						Загрузить<br>программу
-						<div class="main-panel-button-icon"></div>
-					</div>
-					<div id="control-programs-button" class="main-panel-button">
-						Управление<br>программами
-						<div class="main-panel-button-icon"></div>
-					</div>
-					<div id="invisible-button" class="main-panel-button">
-						невидимая<br>кнопка<div class="main-panel-button-icon"></div>
-					</div>						
-					<div id="save_check-button" class="main-panel-button">
-						Сохранить &<br>проверить<div class="main-panel-button-icon"></div>
-					</div>
-					<div id="invisible-button" class="main-panel-button">
-						невидимая<br>кнопка<div class="main-panel-button-icon"></div>
-					</div>
-					<div id="invisible-button" class="main-panel-button">
-						невидимая<br>кнопка<div class="main-panel-button-icon"></div>
-					</div>
-					<div id="invisible-button" class="main-panel-button">
-						невидимая<br>кнопка<div class="main-panel-button-icon"></div>
-					</div>					
+					<section id="prog-detal" class="main-panel">
+						<div id="bend-detal">
+							гнутая деталь
+						</div>
+							
+						<div class="main-panel-buttons">
+							<div id="new-program-button" class="main-panel-button">
+								Новая<br>программа
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="load-program-button" class="main-panel-button">
+								Загрузить<br>программу
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="control-programs-button" class="main-panel-button">
+								Управление<br>программами
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="invisible-button" class="main-panel-button">
+								невидимая<br>кнопка<div class="main-panel-button-icon"></div>
+							</div>						
+							<div id="save_check-button" class="main-panel-button">
+								Сохранить &<br>проверить<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="invisible-button" class="main-panel-button">
+								невидимая<br>кнопка<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="invisible-button" class="main-panel-button">
+								невидимая<br>кнопка<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="invisible-button" class="main-panel-button">
+								невидимая<br>кнопка<div class="main-panel-button-icon"></div>
+							</div>					
+						</div>
+						
+					</section>
+					<section id="prog-bendgraph" class="main-panel">
+						bendgraph
+					</section>	
+					<section id="prog-tools" class="main-panel">
+						инструменты
+						<div class="main-panel-buttons">
+							<div id="new-program-button" class="main-panel-button">
+								<br>Новая секция
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="load-program-button" class="main-panel-button">
+								Скопировать<br>секцию
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="control-programs-button" class="main-panel-button">
+								Удалить<br>секцию
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="invisible-button" class="main-panel-button">
+								невидимая<br>кнопка<div class="main-panel-button-icon"></div>
+							</div>						
+							<div id="load-program-button" class="main-panel-button">
+								Обработать<br>комплектацию
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="load-program-button" class="main-panel-button">
+								<br>План оснастки
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="load-program-button" class="main-panel-button">
+								Предыд.<br>секция
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="load-program-button" class="main-panel-button">
+								След.<br>секция
+								<div class="main-panel-button-icon"></div>
+							</div>				
+						</div>						
+					</section>						
+					<section id="prog-bends" class="main-panel">
+						гибки
+					</section>	
+					<section id="prog-corr" class="main-panel">
+						корректировки
+						
+						<div class="main-panel-buttons">
+							<div id="new-program-button" class="main-panel-button">
+								Настроить<br>колонки
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="load-program-button" class="main-panel-button">
+								Глобальные<br>корректировки
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="control-programs-button" class="main-panel-button">
+								Глобальное<br>значение
+								<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="invisible-button" class="main-panel-button">
+								невидимая<br>кнопка<div class="main-panel-button-icon"></div>
+							</div>						
+							<div id="invisible-button" class="main-panel-button">
+								невидимая<br>кнопка<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="invisible-button" class="main-panel-button">
+								невидимая<br>кнопка<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="invisible-button" class="main-panel-button">
+								невидимая<br>кнопка<div class="main-panel-button-icon"></div>
+							</div>
+							<div id="invisible-button" class="main-panel-button">
+								невидимая<br>кнопка<div class="main-panel-button-icon"></div>
+							</div>					
+						</div>						
+						
+						
+					</section>						
 				</div>
 			</section>			
 

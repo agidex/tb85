@@ -1,0 +1,81 @@
+#main-panel-content-production{
+	display: flex;
+	flex-direction: column;
+	color:#eeefff;
+	font-weight: bold;
+}
+
+#production-upper, #production-upper-left, #production-upper-right{
+	display: flex;
+	flex-direction: row;
+}
+#production-upper-left {
+	width: 50%;
+}
+
+#production-upper{
+	height: 70px;
+	background-color: #66669a;
+	border-bottom : 5px solid #999ab6;
+}
+
+#production-down{
+	background-color: #66669a;
+	height: 100%;
+}
+
+#program-name{
+	width: 100%;
+	border-right : 5px solid #999ab6;
+}
+#program-counter{
+	width: 170px;
+	border-right : 5px solid #999ab6;
+}
+#program-counter > div{
+	display:flex;
+	flex-direction:row;
+}
+
+#program-counter > div > .production-input{
+	width: 100%;
+}
+
+#program-section{
+	width: 65px;
+	border-right : 5px solid #999ab6;
+}
+
+#program-bend-number > div{
+	display:flex;
+	flex-direction:row;
+}
+
+#program-bend-number > div > .production-input{
+	width: 100%;
+}
+
+#program-bend-number{
+	width: 100px;
+	border-right : 5px solid #999ab6;
+}
+#program-rept-number{
+	width: 100px;
+	border-right : 5px solid #999ab6;
+
+}
+#production-down-left {
+	width: 50%;
+	height: 100%;
+	border-right : 5px solid #999ab6;
+}
+
+.production-input {
+    color: #FFCC33;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #010080;
+    margin: 5px;
+    padding: 5px;
+	
+}

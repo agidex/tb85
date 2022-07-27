@@ -1,0 +1,50 @@
+#tab-prog-detal:checked ~ #prog-detal,
+#tab-prog-bendgraph:checked ~ #prog-bendgraph,
+#tab-prog-tools:checked ~ #prog-tools,
+#tab-prog-bends:checked ~ #prog-bends,
+#tab-prog-corr:checked ~ #prog-corr
+{	
+	display: flex;
+	flex-direction: column;
+	height:100%-50px; 
+}
+
+#tabs-header{
+	height:50px;
+	width:100%;
+	background-color:#9a9ab3;
+	display:flex;
+	flex-direction: row;
+}
+
+.tab-button{
+	background-color: #cdcdd9;
+	width: 108px;
+	height: 46px;
+	
+	
+	text-align:center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	font-weight:bold;
+	border: 2px solid #9a9ab3;
+}
+
+#tab-prog-detal:checked ~ #tabs-header > #prog-detal-button,
+#tab-prog-bendgraph:checked ~ #tabs-header > #prog-bendgraph-button,
+#tab-prog-tools:checked ~ #tabs-header > #prog-tools-button,
+#tab-prog-bends:checked ~ #tabs-header > #prog-bends-button,
+#tab-prog-corr:checked ~ #tabs-header > #prog-corr-button
+{
+	background: #EBEBEB;
+	border-top: 2px solid orange;
+	border-left: 2px solid orange;
+	border-right: 2px solid orange;
+}
+
+#bend-detal{
+
+	height:100%;
+}
