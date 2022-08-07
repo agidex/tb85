@@ -4,12 +4,12 @@
 	
 	width:100%;
 	height:100%;
-	
+/*	
 	width: 1024px;
 	height: 768px;	
+*/	
+	position:relative;
 	
-	margin: auto;
-  
 	padding-left: 5px;
 	padding-bottom: 5px;
 	
@@ -23,6 +23,7 @@
 #main-content{	
 	display: flex;
 	flex-direction: column;
+	
 	width:100%;
 }
 
@@ -34,8 +35,6 @@
 	
 	background-color: #010080;
 }
-
-
 
 .menu-button {
 	border: 2px outset #dddfff;
@@ -60,17 +59,12 @@
   display: none; 
 }
 
-/* input:checked  + label{  */
-	/* color: #555; */
-	/* background-color: white;  */
-/* }  */
-
 section {
 	display: none;
 }
 
 #tab-production:checked ~ #main-content > #main-panel-production, 
-#tab-handle:checked ~ #main-content > #main-panel-handle ,
+#tab-handle:checked ~ #main-content > #main-panel-handle,
 #tab-setting:checked ~ #main-content > #main-panel-setting, 
 #tab-programming:checked ~ #main-content > #main-panel-programming,
 #tab-technology:checked ~ #main-content > #main-panel-technology,
@@ -78,16 +72,14 @@ section {
 #tab-diagnosis:checked ~ #main-content > #main-panel-diagnosis,
 #tab-help:checked ~ #main-content > #main-panel-help
 {
-	
-	
 	margin: 10px 5px 5px 5px;
 	
 	border: 2px solid orange;
 	outline: 5px solid #999ab6;
 	
-	height:100%;
 	display: flex;
-	flex-direction: column;  
+	flex-direction: column;
+	height:100%;
 }
 
 #tab-production:checked  ~ #menu > #production-button,
@@ -110,11 +102,12 @@ section {
 	font-weight:bold;
 	
 	display:flex;
+	flex-direction: row;
 	align-items: center;
 }
-
+/*===============================================================================*/
 .main-panel-content{
-	height:100%;
+	height: 100%;
 	background-color: #999ab6;
 }
 

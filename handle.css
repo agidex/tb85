@@ -1,6 +1,117 @@
+.handle-frames{
+	font-weight:bold;
+	color:white;
+}
+
+#handle-up-frame {
+	width: 100%;
+	height:185px;
+	
+	display:flex;
+	flex-direction:row;
+}
+
+#handle-material {
+	width:204px;
+	background-color: #666698;
+	margin-right:5px;
+	
+	display:flex;
+	flex-direction:column;	
+	
+	padding:10px;
+	align-items: center;
+}
+
+.input-number{
+	display:flex;
+	flex-direction:column;
+	margin-right: 5px;
+}
+
+.input-number > input, .input-number > select{
+	font-size: 24px;
+	font-weight: bold;
+	width: 110px;
+	height:35px;
+	text-align:right;
+}
+
+.input-write > input{
+	color:#000000;
+	background-color:#ffffff;
+}
+
+.input-read > input{
+	color:#ffcc34;
+	background-color:#000000;
+}
+
+.input-select > input, .input-select > select{
+	text-align:left;
+	color:#ffcc34;
+	background-color:#000090;
+}
+
+.input-select > select{
+	width: 150px;
+}
+
+#handle-material-metal> select{
+	
+}
 
 
+#handle-tool {
+	padding:10px;
+	width:100%;
+	background-color: #666698;
+	
+	display:flex;
+	flex-direction:column;	
+}
 
+#handle-tool-up-line, #handle-tool-down-line{
+	display:flex;
+	flex-direction:row;	
+}
+
+#handle-tool-up > input, #handle-tool-down > input {
+	width: 400px;
+}
+
+
+#handle-down-frame {
+	height: 100%;
+	margin-top:5px;
+	display:flex;
+	flex-direction:row;	
+}
+
+#handle-bend-type {
+	width:204px;
+	background-color: #666698;
+	margin-right:5px;
+	padding:10px;
+	
+	display:flex;
+	flex-direction:column;	
+	
+	align-items: center;
+}
+
+.flex-footer-col{
+	height:100%;
+}
+
+#handle-bend-details {
+	width:100%;
+	background-color: #666698;
+	padding:10px;
+	
+	display:flex;
+	flex-direction:column;
+}
 
 
 

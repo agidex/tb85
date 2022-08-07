@@ -6,7 +6,7 @@
 {	
 	display: flex;
 	flex-direction: column;
-	height:100%-50px; 
+	border: 2px solid orange;
 }
 
 #tabs-header{
@@ -45,6 +45,11 @@
 }
 
 #bend-detal{
-
-	height:100%;
+	background-color: white;
+}
+#bend-tools{
+	background-color: blue;
+}
+#bend-corrs{
+	background-color: green;
 }

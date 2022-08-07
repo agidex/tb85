@@ -1,6 +1,9 @@
-#main-panel-content-production{
+.main-panel-content{
 	display: flex;
 	flex-direction: column;
+}
+
+#main-panel-content-production{
 	color:#eeefff;
 	font-weight: bold;
 }
@@ -78,4 +81,8 @@
     margin: 5px;
     padding: 5px;
 	
+}
+
+.main-panel{
+	height: 100%;
 }

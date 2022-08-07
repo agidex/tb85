@@ -9,19 +9,20 @@
 	<link rel="stylesheet" href="./prog.css"></link>
 	<meta charset="UTF-8">
 </head>
-<body>	
 	<input id="original-screen" type="radio" name="fit-screen2" class="tabs-input">
 	<input id="fit-screen" type="radio" name="fit-screen2" class="tabs-input" checked>
+<body>	
+
 	<div id="toplevel">
 	
-	<input id="tab-production" type="radio" name="menu" class="tabs-input" checked>
-	<input id="tab-handle" type="radio" name="menu" class="tabs-input"> 
-	<input id="tab-setting" type="radio" name="menu" class="tabs-input"> 
-	<input id="tab-programming" type="radio" name="menu" class="tabs-input"> 
-	<input id="tab-technology" type="radio" name="menu" class="tabs-input"> 
-	<input id="tab-maintenance" type="radio" name="menu" class="tabs-input"> 
-	<input id="tab-diagnosis" type="radio" name="menu" class="tabs-input"> 
-	<input id="tab-help" type="radio" name="menu" class="tabs-input"> 
+		<input id="tab-production" type="radio" name="menu" class="tabs-input" checked>
+		<input id="tab-handle" type="radio" name="menu" class="tabs-input"> 
+		<input id="tab-setting" type="radio" name="menu" class="tabs-input"> 
+		<input id="tab-programming" type="radio" name="menu" class="tabs-input"> 
+		<input id="tab-technology" type="radio" name="menu" class="tabs-input"> 
+		<input id="tab-maintenance" type="radio" name="menu" class="tabs-input"> 
+		<input id="tab-diagnosis" type="radio" name="menu" class="tabs-input"> 
+		<input id="tab-help" type="radio" name="menu" class="tabs-input"> 
 	
 		<div id="main-content">
 			<div id="header">
@@ -31,6 +32,7 @@
 						<div id="hydro-icon">Hydro</div>
 						<div id="up-tool-icon">UP tool</div>
 						<div id="down-tool-icon">DOWN tool</div>
+						
 						<div id="orig-scr-icon">
 							<label id="original-scr" for="original-screen">1024x768</label>
 						</div>
@@ -60,14 +62,11 @@
 			</div>
 			
 			
-			<section id="main-panel-production" class="main-panel">
+			<section id="main-panel-production">
 				<div class="main-panel-header">
 					STIL PRISPOSOBA
 				</div>
 				<div id="main-panel-content-production" class="main-panel-content">
-		
-				
-				
 					<div id="production-upper">
 						<div id="production-upper-left">
 							<div id="program-name">
@@ -108,12 +107,6 @@
 						
 						</div>					
 					</div>
-					
-					
-					
-					
-					
-					
 				</div>
 				<div class="main-panel-buttons">
 					<div id="pplan-button" class="main-panel-button">
@@ -150,9 +143,111 @@
 			</section>
 			
 			
-			<section id="main-panel-handle" class="main-panel">
+			<section id="main-panel-handle">
 				<div class="main-panel-content">
-				Ручной режим
+					<div id="handle-up-frame">
+						<div id="handle-material" class="handle-frames">
+						ПАРАМ. МАТЕРИАЛОВ >
+							<div id="handle-material-metal" class="input-number input-select">
+								<label class="" for="handle-metal"><br></label>
+								<select id="" name="handle-metal">
+									<option value="st37">St37</option>
+									<option value="nerg">1.403</option>
+									<option value="zink">Zn</option>
+									<option value="alum">Al</option>
+								</select>							
+							</div>						
+							<div id="handle-material-thickness" class="input-number input-write">
+								<label class="" for="sheet-thickness">Толщина листа<br>[мм]</label>
+								<input id="handle-sheet-thickness" type="text" name="sheet-thickness"  value="2.0">
+							</div>
+						</div>	
+						<div id="handle-tool" class="handle-frames">
+							ИНСТРУМЕНТ
+							<div id="handle-tool-up-line">
+								<div id="handle-tool-up" class="input-number input-select">
+									<label class="" for="handle-tool-up">Верх. инструмент</label>
+									<input id="handle-tool-up" type="text" name="tool-up" value="OW210 R1/28 H140">
+								</div>
+								<div id="handle-tool-up-height" class="input-number input-select">
+									<label class="" for="handle-tool-up-height">Высота [мм]</label>
+									<input id="handle-tool-up-height" type="text" name="tool-up-height" value="140">
+								</div>								
+							</div>							
+							
+							<div id="handle-tool-down-line">
+								<div id="handle-tool-down" class="input-number input-select">
+									<label class="" for="handle-tool-up"><br>Ниж. инструмент</label>
+									<input id="handle-tool-down" type="text" name="tool-down" value="EV003 W10/30 R1">
+								</div>
+								<div id="handle-tool-down-height" class="input-number input-select">
+									<label class="" for="handle-tool-up-height"><br>Высота [мм]</label>
+									<input id="handle-tool-down-height" type="text" name="tool-down-height" value="100">
+								</div>								
+							</div>						
+						</div>					
+					</div>
+					
+					<div id="handle-down-frame">
+						<div id="handle-bend-type" class="handle-frames">
+							СПОСОБ ГИБКИ >
+							<div id="handle-bend-type-input" class="input-number input-select">
+								<label class="" for="handle-bend-type"><br></label>
+								<select id="" name="handle-bend-type">
+									<option value="airbend">Свободная гибка</option>
+									<option value="flatt">Фальцевание</option>
+									<option value="bott">Правка</option>
+									<option value="chek">Гибка чеканкой</option>
+								</select>							
+							</div>
+							<div class="flex-footer-col"></div>
+							<div id="handle-bend-type-length" class="input-number input-write">
+								<label class="" for="handle-bend-type-length">Длина гибки<br>кромок [мм]</label>
+								<input id="handle-bend-type-length" type="text" name="bend-length" value="2000.0">
+							</div>
+							<div id="handle-bend-type-position" class="input-number input-write">
+								<label class="" for="handle-bend-type-position">Позиция гибки<br>[мм]</label>
+								<input id="handle-bend-type-position" type="text" name="bend-position" value="615.0">
+							</div>
+						</div>
+						<div id="handle-bend-details" class="handle-frames">
+							<div id="handle-bend-details-angle" class="input-number input-write">
+								<label class="" for="handle-bend-details-angle">Угол гибки<br>задан. [0]</label>
+								<input id="handle-bend-details-angle" type="text" name="bend-angle" value="90.0">
+							</div>
+							<div id="handle-bend-details-angle-corr" class="input-number input-write">
+								<label class="" for="handle-bend-details-angle-corr">Угол гибки<br>корректировка</label>
+								<input id="handle-bend-details-angle-corr" type="text" name="bend-angle-corr" value="4.5">
+							</div>
+							<div id="handle-bend-details-x" class="input-number input-write">
+								<label class="" for="handle-bend-details-x">X1 задан.<br>расстояние [мм]</label>
+								<input id="handle-bend-details-x" type="text" name="bend-angle" value="25.0">
+							</div>
+							<div id="handle-bend-details-x-corr" class="input-number input-write">
+								<label class="" for="handle-bend-details-x-corr">Коррект. X<br>[мм]</label>
+								<input id="handle-bend-details-x-corr" type="text" name="bend-angle" value="-1.77">
+							</div>
+							<!--
+							<div id="handle-bend-details-angle" class="input-number input-write">
+								<label class="" for="handle-bend-details-angle">Угол гибки<br>задан. [0]</label>
+								<input id="handle-bend-details-angle" type="text" name="bend-angle" value="90.0">
+							</div>
+							<div id="handle-bend-details-angle-corr" class="input-number input-write">
+								<label class="" for="handle-bend-details-angle-corr">Угол гибки<br>корректировка</label>
+								<input id="handle-bend-details-angle-corr" type="text" name="bend-angle-corr" value="4.5">
+							</div>
+							<div id="handle-bend-details-x" class="input-number input-write">
+								<label class="" for="handle-bend-details-x">X1 задан.<br>расстояние [мм]</label>
+								<input id="handle-bend-details-x" type="text" name="bend-angle" value="25.0">
+							</div>
+							<div id="handle-bend-details-x-corr" class="input-number input-write">
+								<label class="" for="handle-bend-details-x-corr">Коррект. X<br>[мм]</label>
+								<input id="handle-bend-details-x-corr" type="text" name="bend-angle" value="-1.77">
+							</div>
+							-->
+						</div>
+					</div>
+					
 				</div>
 				<div class="main-panel-buttons">
 					<div id="press-params-button" class="main-panel-button">
@@ -193,7 +288,7 @@
 						
 			<section id="main-panel-programming" class="main-panel">
 				<div class="main-panel-header">NEW PROGRAM</div>
-				<div class="main-panel-content">
+				<div class="main-panel-content" class="main-panel">
 					<input id="tab-prog-detal" type="radio" name="prog-tabs" class="tabs-input" checked>
 					<input id="tab-prog-bendgraph" type="radio" name="prog-tabs" class="tabs-input"> 
 					<input id="tab-prog-tools" type="radio" name="prog-tabs" class="tabs-input" checked>
@@ -208,7 +303,7 @@
 						<label id="prog-corr-button" for="tab-prog-corr" class="tab-button">Корректи-<br>ровки</label>
 					</div>
 					<section id="prog-detal" class="main-panel">
-						<div id="bend-detal">
+						<div id="bend-detal" class="main-panel">
 							гнутая деталь
 						</div>
 							
@@ -247,7 +342,9 @@
 						bendgraph
 					</section>	
 					<section id="prog-tools" class="main-panel">
-						инструменты
+						<div id="bend-tools" class="main-panel">
+							инструменты
+						</div>
 						<div class="main-panel-buttons">
 							<div id="new-program-button" class="main-panel-button">
 								<br>Новая секция
@@ -282,12 +379,16 @@
 							</div>				
 						</div>						
 					</section>						
-					<section id="prog-bends" class="main-panel">
-						гибки
+					<section id="prog-bends" class="main-panel">	
+						<div id="bend-bends" class="main-panel">
+							гибки
+						</div>						
 					</section>	
 					<section id="prog-corr" class="main-panel">
-						корректировки
 						
+						<div id="bend-corrs" class="main-panel">
+							корректировки
+						</div>
 						<div class="main-panel-buttons">
 							<div id="new-program-button" class="main-panel-button">
 								Настроить<br>колонки
