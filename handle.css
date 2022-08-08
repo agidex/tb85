@@ -5,7 +5,7 @@
 
 #handle-up-frame {
 	width: 100%;
-	height:185px;
+	fheight:185px;
 	
 	display:flex;
 	flex-direction:row;
@@ -27,12 +27,16 @@
 	display:flex;
 	flex-direction:column;
 	margin-right: 5px;
+	width: 110px;
+	
+	font-weight:bold;
+	color:white;
 }
 
 .input-number > input, .input-number > select{
 	font-size: 24px;
 	font-weight: bold;
-	width: 110px;
+	width: 100%;
 	height:35px;
 	text-align:right;
 }
@@ -53,7 +57,7 @@
 	background-color:#000090;
 }
 
-.input-select > select{
+.input-select {
 	width: 150px;
 }
 
@@ -76,7 +80,7 @@
 	flex-direction:row;	
 }
 
-#handle-tool-up > input, #handle-tool-down > input {
+#handle-tool-up , #handle-tool-down {
 	width: 400px;
 }
 

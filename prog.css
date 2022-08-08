@@ -4,6 +4,7 @@
 #tab-prog-bends:checked ~ #prog-bends,
 #tab-prog-corr:checked ~ #prog-corr
 {	
+	height:100%;
 	display: flex;
 	flex-direction: column;
 	border: 2px solid orange;

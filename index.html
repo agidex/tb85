@@ -11,10 +11,8 @@
 </head>
 	<input id="original-screen" type="radio" name="fit-screen2" class="tabs-input">
 	<input id="fit-screen" type="radio" name="fit-screen2" class="tabs-input" checked>
-<body>	
-
+<body>
 	<div id="toplevel">
-	
 		<input id="tab-production" type="radio" name="menu" class="tabs-input" checked>
 		<input id="tab-handle" type="radio" name="menu" class="tabs-input"> 
 		<input id="tab-setting" type="radio" name="menu" class="tabs-input"> 
@@ -60,8 +58,6 @@
 					</div>
 				</div>			
 			</div>
-			
-			
 			<section id="main-panel-production">
 				<div class="main-panel-header">
 					STIL PRISPOSOBA
@@ -69,33 +65,39 @@
 				<div id="main-panel-content-production" class="main-panel-content">
 					<div id="production-upper">
 						<div id="production-upper-left">
-							<div id="program-name">
-								Программа
-								<div class="production-input">STIL PRISPOSOBA</div>
+							<div id="production-program-name" class="input-number input-select">
+								<label class="" for="production-program-name">Программа</label>
+								<input id="production-program-name" type="text" name="program-name" value="STIL PRISPOSOBA">
 							</div>
-							<div id="program-counter">
-								шт
-								<div> 
-									<div class="production-input">3</div>
-									<div class="production-input">/0</div>
-								</div>
+							<div id="production-program-counter" class="input-number input-select">
+								<label class="" for="production-program-counter">шт.</label>
+								<input id="production-program-counter" type="text" name="program-counter" value="3">
 							</div>
+							<div id="production-program-counter-total" class="input-number input-select">
+								<label class="" for="production-program-counter-total"><br></label>
+								<input id="production-program-counter-total" type="text" name="program-counter-total" value="0">
+							</div>	
 						</div>
 						<div id="production-upper-right">
-							<div id="program-section">
-								Секция
-								<div class="production-input">1</div>
+							<div id="production-program-section" class="input-number input-select">
+								<label class="" for="production-program-section">Секция</label>
+								<input id="production-program-section" type="text" name="program-section" value="1">
 							</div>
-							<div id="program-bend-number">
-								Гибка
-								<div> 
-									<div class="production-input">1</div>
-									<div class="production-input">/9</div>
-								</div>							
+							<div id="production-program-bend" class="input-number input-write">
+								<label class="" for="production-program-bend">Гибка</label>
+								<input id="production-program-bend" type="text" name="program-bend" value="1">
 							</div>
-							<div id="program-rept-number">
-								Повт.
-								<div class="production-input">1</div>
+							<div id="production-program-bend-total" class="input-number input-select">
+								<label class="" for="production-program-bend-total"><br></label>
+								<input id="production-program-bend-total" type="text" name="program-bend-total" value="/9">
+							</div>
+							<div id="production-program-rept" class="input-number input-write">
+								<label class="" for="production-program-rept">Повт.</label>
+								<input id="production-program-rept" type="text" name="program-rept" value="1">
+							</div>
+							<div id="production-program-rept-total" class="input-number input-select">
+								<label class="" for="production-program-rept-total"><br></label>
+								<input id="production-program-rept-total" type="text" name="program-rept-total" value="/1">
 							</div>
 						</div>						
 					</div>
@@ -141,7 +143,6 @@
 					</div>
 				</div>
 			</section>
-			
 			
 			<section id="main-panel-handle">
 				<div class="main-panel-content">
@@ -286,9 +287,9 @@
 				</div>
 			</section>			
 						
-			<section id="main-panel-programming" class="main-panel">
+			<section id="main-panel-programming">
 				<div class="main-panel-header">NEW PROGRAM</div>
-				<div class="main-panel-content" class="main-panel">
+				<div class="main-panel-content">
 					<input id="tab-prog-detal" type="radio" name="prog-tabs" class="tabs-input" checked>
 					<input id="tab-prog-bendgraph" type="radio" name="prog-tabs" class="tabs-input"> 
 					<input id="tab-prog-tools" type="radio" name="prog-tabs" class="tabs-input" checked>
@@ -302,8 +303,8 @@
 						<label id="prog-bends-button" for="tab-prog-bends" class="tab-button">Гибки</label>
 						<label id="prog-corr-button" for="tab-prog-corr" class="tab-button">Корректи-<br>ровки</label>
 					</div>
-					<section id="prog-detal" class="main-panel">
-						<div id="bend-detal" class="main-panel">
+					<section id="prog-detal" >
+						<div id="bend-detal" class="main-panel-content">
 							гнутая деталь
 						</div>
 							
@@ -338,11 +339,11 @@
 						</div>
 						
 					</section>
-					<section id="prog-bendgraph" class="main-panel">
+					<section id="prog-bendgraph" >
 						bendgraph
 					</section>	
-					<section id="prog-tools" class="main-panel">
-						<div id="bend-tools" class="main-panel">
+					<section id="prog-tools" >
+						<div id="bend-tools" class="main-panel-content">
 							инструменты
 						</div>
 						<div class="main-panel-buttons">
@@ -379,14 +380,14 @@
 							</div>				
 						</div>						
 					</section>						
-					<section id="prog-bends" class="main-panel">	
-						<div id="bend-bends" class="main-panel">
+					<section id="prog-bends" >	
+						<div id="bend-bends"  class="main-panel-content">
 							гибки
 						</div>						
 					</section>	
-					<section id="prog-corr" class="main-panel">
+					<section id="prog-corr" >
 						
-						<div id="bend-corrs" class="main-panel">
+						<div id="bend-corrs"  class="main-panel-content">
 							корректировки
 						</div>
 						<div class="main-panel-buttons">
